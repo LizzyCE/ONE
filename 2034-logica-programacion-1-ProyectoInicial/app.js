@@ -2,7 +2,7 @@
 /**Palabras reservadas: cons, let, var */
 
 /**Variables */
-let numeroSecreto = 3;
+let numeroSecreto = Math.floor(Math.random()*10)+1;
 let numeroUsuario = 0;
 let intentos = 1;
 //let palabraVeces = 'vez';
@@ -11,7 +11,7 @@ let maximosIntentos = 3;
 /**Bucle */
 while(numeroUsuario != numeroSecreto){
       
-    numeroUsuario = prompt("Indica un numero del 1 al 10:");
+    numeroUsuario = parseInt(prompt("Indica un numero del 1 al 10:"));
     console.log(numeroUsuario);
 
     /**Este código realiza la comparación */
