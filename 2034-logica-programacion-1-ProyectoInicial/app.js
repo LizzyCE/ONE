@@ -2,11 +2,12 @@
 /**Palabras reservadas: cons, let, var */
 
 /**Variables */
-let numeroSecreto = Math.floor(Math.random()*10)+1;
+let numeroMaximoPosible = 100;
+let numeroSecreto = Math.floor(Math.random()*numeroMaximoPosible)+1;
 let numeroUsuario = 0;
 let intentos = 1;
 //let palabraVeces = 'vez';
-let maximosIntentos = 3;
+let maximosIntentos = 5;
 
 /**Bucle */
 while(numeroUsuario != numeroSecreto){
