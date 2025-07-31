@@ -5,7 +5,8 @@
 let numeroSecreto = 3;
 let numeroUsuario = 0;
 let intentos = 1;
-let palabraVeces = 'vez';
+//let palabraVeces = 'vez';
+let maximosIntentos = 3;
 
 /**Bucle */
 while(numeroUsuario != numeroSecreto){
@@ -16,7 +17,7 @@ while(numeroUsuario != numeroSecreto){
     /**Este código realiza la comparación */
     if (numeroUsuario == numeroSecreto){
         //La condicion se cumplio
-        alert(`Acertaste, el numero es ${numeroUsuario}. Lo hiciste en ${intentos} ${palabraVeces}`);
+        alert(`Acertaste, el numero es ${numeroUsuario}. Lo hiciste en ${intentos} ${intentos == 1 ? 'vez' : 'veces'}`);
 
         //La condicion no se cumplio
     } else {
@@ -28,9 +29,15 @@ while(numeroUsuario != numeroSecreto){
         }
 
         /**Incrementamos el contador cuando no se acierta */
-        intentos = intentos + 1;
-        palabraVeces = "veces";
+        intentos++;
+        //palabraVeces = "veces";
+        
+        if(intentos > maximosIntentos){
+            alert(`Llegaste al numero maximo de ${maximosIntentos} intentos`);
+            break;
+        }
+
     }
-}
+} 
 
 
