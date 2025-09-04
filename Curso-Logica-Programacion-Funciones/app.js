@@ -6,8 +6,8 @@ function asignarTextoElemento(elemento, texto){
     return; //Buena practica
 }
 
-function intentoDeUsuario() {
-    alert("Click desde el boton");
+function verificarIntento() {
+    let numeroDeUsuario = document.getElementById('valorUsuario').value;
     return;
 }
 
